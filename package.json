@@ -1,0 +1,23 @@
+{
+  "name": "entrymanagement",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "cookieparser": "^0.1.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.1",
+    "sequelize": "^5.21.2",
+    "sqlite3": "^4.1.0",
+    "textbelt": "0.0.4",
+    "twilio": "^3.37.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

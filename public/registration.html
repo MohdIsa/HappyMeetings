@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Welcome</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+        <a class="navbar-brand ml-5" href="/">
+            <i class="fas fa-chalkboard-teacher"></i>
+            HappyMeetings
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="form">
+        <form action="/database" method="post">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="mt-2 mb-4">Visitor's Information</h1>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-2">
+                                <label for="validationDefault01"> Name</label>
+                                <input type="text" class="form-control" id="validationDefault01" name="vname"
+                                    placeholder="Name" required>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-12 col-form-label">Email</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="colFormLabel" name="vemail"
+                                    placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-2">
+                                <!--<input type="number" class="form-control" id="validationDefault04" name="contact" placeholder="10-digits" max="10000000000" required>-->
+                                <label for="validationDefault04">Contact No.</label>
+                                <input type="tel" class="form-control" id="validationDefault04" name="vnumber"
+                                    placeholder="10-digits" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1 class="mt-2 mb-4">Host's Information</h1>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-2">
+                                <label for="validationDefault01">Name</label>
+                                <input type="text" class="form-control" id="validationDefault01" name="hname"
+                                    placeholder="Name" required>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-12 col-form-label">Email</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="colFormLabel" name="hemail"
+                                    placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" name="address"
+                                placeholder="1234 Main St">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-2">
+                                <!--<input type="number" class="form-control" id="validationDefault04" name="contact" placeholder="10-digits" max="10000000000" required>-->
+                                <label for="validationDefault04">Contact No.</label>
+                                <input type="tel" class="form-control" id="validationDefault04" name="hnumber"
+                                    placeholder="10-digits" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Confirm Meeting</button>
+            </div>
+        </form>
+    </div>
+
+    <style rel="stylesheet" type="text/css">
+        .form {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            border: 3px solid #585D5B;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
