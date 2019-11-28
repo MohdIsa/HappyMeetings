@@ -118,6 +118,8 @@ app.get('/end', async (req, res) => {
   res.sendStatus(200)
 
 })
-app.listen(3000, () => {
+
+var port = process.env.PORT || 3000
+app.listen(port, () => {
   console.log("localhost:3000")
 })
