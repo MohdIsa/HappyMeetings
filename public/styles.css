@@ -46,7 +46,7 @@ body{
   border-radius: 4px;
   position: absolute;
   top: 13px;
-  left: 127px;
+  left: 130px;
   z-index: 9;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     transform: rotate(90deg);

@@ -16,6 +16,11 @@ var msgtohost = "Hey! A visitor has come to visit you."
 var msgtovisitor = "Thanks for visiting us.Looking forward to meeting you soon."
 
 
+//Init Twilio
+const accountSid = 'AC74e82410895a9bce6d1692560856ea88';
+const authToken = 'API_key';
+const client = require('twilio')(accountSid, authToken);
+
 //Setting the details via which the emails will be sent
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -57,6 +62,17 @@ app.post('/database', async (req, res) => {
   console.log(name);
   console.log(email);
   console.log(hnumber)
+
+  //Sending sms to host
+  //The code is commented 
+  //Since the API is in trial mode
+  // client.messages
+  // .create({
+  //   body: `Name - ${name}\nEmail - ${email}\nPhone - ${number}\nCheckin Time - ${checkIn}`,
+  //   from: '+12408927209',
+  //   to: '+917007936908'
+  // })
+  // .then(message => console.log(message.sid));
 
 
   //Sending email to the Host
