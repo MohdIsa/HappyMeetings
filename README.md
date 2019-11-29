@@ -38,6 +38,6 @@ Contains information about the Host.
 ## Built With
 - [jQuery](https://www.w3schools.com/jquery/jquery_ref_ajax.asp) - [Ajax](https://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</br>
 - [Bootstrap](https://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.</br>
-- Node.js - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.</br>
-- Express.js - Fast, unopinionated, minimalist web framework for Node.js. </br>
-- ORM Sequelize - Sequelize is a promise-based ORM for Node. js and io. js. It supports the dialects PostgreSQL, MySQL, MariaDB, SQLite and MSSQL and features solid transaction support, relations, read replication and more.
+- **Node.js** - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.</br>
+- **Express.js** - Fast, unopinionated, minimalist web framework for Node.js. </br>
+- **ORM Sequelize** - Sequelize is a promise-based ORM for Node. js and io. js. It supports the dialects PostgreSQL, MySQL, MariaDB, SQLite and MSSQL and features solid transaction support, relations, read replication and more.
