@@ -25,13 +25,15 @@ Dummy Email of 'mohdravil001@gmail.com' has been used to send all the emails.
 
 ### Information send to Host
 Contains information about the visitor.
+#### Email:
+![Host](https://user-images.githubusercontent.com/44192857/69889929-9dc0f480-1319-11ea-92da-4c5e236a2d62.jpeg)
 
-![WhatsApp Image 2019-11-28 at 10 01 24 PM](https://user-images.githubusercontent.com/44192857/69822746-22821480-122d-11ea-9da0-a08c7cb669bb.jpeg)
+#### SMS:
+![msg](https://user-images.githubusercontent.com/44192857/69889833-0fe50980-1319-11ea-90cd-b75e856b0536.jpeg)
 
 ### Information send to Visitor
 Contains information about the Host.
-
-![Visitors](https://user-images.githubusercontent.com/44192857/69822731-1ac27000-122d-11ea-92db-ec0218952269.png)
+![Visitors](https://user-images.githubusercontent.com/44192857/69889830-0d82af80-1319-11ea-8838-73ed0b693014.png)
 
 ## Built With
 - [jQuery](https://www.w3schools.com/jquery/jquery_ref_ajax.asp) - [Ajax](https://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</br>
