@@ -66,6 +66,7 @@ app.post('/database', async (req, res) => {
   //Sending sms to host
   //The code is commented 
   //Since the API is in trial mode
+  
   // client.messages
   // .create({
   //   body: `Name - ${name}\nEmail - ${email}\nPhone - ${number}\nCheckin Time - ${checkIn}`,
