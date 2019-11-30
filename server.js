@@ -1,27 +1,23 @@
 const express = require('express')
 const app = express()
 const { Host, Visitor, db } = require('./db')
-app.use(express.json())
+const Nexmo = require('nexmo');
 var cookieParser = require('cookie-parser');
+var nodemailer = require('nodemailer');
+
+app.use(express.json())
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(__dirname + '/public'))
-var nodemailer = require('nodemailer');
 
 //Setting the local time
 var indiaTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
 indiaTime = new Date(indiaTime);
 
 var msgtohost = "Hey! A visitor has come to visit you."
-var msgtovisitor = "Thanks for visiting us.Looking forward to meeting you soon."
+var msgtovisitor = "Thanks for visiting us. Looking forward to meeting you soon."
 
-
-//Init Twilio
-const accountSid = 'AC74e82410895a9bce6d1692560856ea88';
-const authToken = 'API_key';
-const client = require('twilio')(accountSid, authToken);
-
-//Setting the details via which the emails will be sent
+//Init Nodemailer
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -63,17 +59,20 @@ app.post('/database', async (req, res) => {
   console.log(email);
   console.log(hnumber)
 
-  //Sending sms to host
-  //The code is commented 
-  //Since the API is in trial mode
-  
-  // client.messages
-  // .create({
-  //   body: `Name - ${name}\nEmail - ${email}\nPhone - ${number}\nCheckin Time - ${checkIn}`,
-  //   from: '+12408927209',
-  //   to: '+917007936908'
-  // })
-  // .then(message => console.log(message.sid));
+
+  //Nexmo API to send sms
+  //Since it's a paid website
+  //We can text only those numbers which are whitelisted.
+  const nexmo = new Nexmo({
+    apiKey: '6ef51bb5',
+    apiSecret: 'rAbQBAiSqiNkzQ4D',
+  });
+
+  const from = 'Nexmo';
+  const to = '919140372428';
+  const text = `${msgtohost}\nVisitor's Name - ${name}\nVisitor's Email - ${email}\nVisitor's Ph No- ${number}\nVisitor's Checkin Time- ${checkIn}`
+
+  nexmo.message.sendSms(from, to, text);
 
 
   //Sending email to the Host
