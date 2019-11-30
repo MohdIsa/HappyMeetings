@@ -1,7 +1,7 @@
 ![Landing](https://user-images.githubusercontent.com/44192857/69822213-cd91ce80-122b-11ea-8e43-fdd2fa1f82ed.png)
 # HappyMeetings
 An entry management web app which uses Nodemailer as an API which sends email to the host as well as the visitor providing them with useful information about their counterpart.
-It also sends text msg to both the parties for which it uses twilio API.
+It also sends a sms to the Host which contains information about the visitor who has just arrived.
 
 ## Demo
 Here is a working live demo : https://mihappymeetings.herokuapp.com/
@@ -14,7 +14,7 @@ Here is a working live demo : https://mihappymeetings.herokuapp.com/
 
 ## Waiting Area
 Once the Visitor enters the necessary information he/she is directed to the waiting area where a clock shows the time. Details of the visitor are emailed to the Host while he/she waits. The user can checkout at anytime he/she wants then the details of the meeting will be emailed to the Visitor.
-![WaitingArea](https://user-images.githubusercontent.com/44192857/69822740-1f872400-122d-11ea-89df-abe86e8b1341.png)
+![waiting](https://user-images.githubusercontent.com/44192857/69898558-1018ef80-1381-11ea-9e3b-646ecc58ea9e.png)
 
 ## Details of Meeting
 
@@ -29,7 +29,8 @@ Contains information about the visitor.
 ![Host](https://user-images.githubusercontent.com/44192857/69889929-9dc0f480-1319-11ea-92da-4c5e236a2d62.jpeg)
 
 #### SMS:
-![msg](https://user-images.githubusercontent.com/44192857/69889833-0fe50980-1319-11ea-90cd-b75e856b0536.jpeg)
+For sms we are using Nexmo API. Since the account is in trial mode, msgs can only be send to the numbers which are whitelisted. For sending sms to unkown numbers without the need to whitelist them we need to buy a Nexmo virtual number.
+![WhatsApp Image 2019-11-30 at 2 36 14 PM](https://user-images.githubusercontent.com/44192857/69898387-1b6b1b80-137f-11ea-8400-3d65674cb43e.jpeg)
 
 ### Information send to Visitor
 Contains information about the Host.
